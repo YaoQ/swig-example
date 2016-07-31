@@ -47,10 +47,10 @@ Just for taking a note.
 ```
 ### 3. Build a python module
 ```bash
- # swig -python example.i
- # gcc -fPIC -c example.c example_wrap.c \
+$ swig -python example.i
+$ gcc -fPIC -c example.c example_wrap.c \
         -I/usr/local/include/python2.1
-# ld -shared example.o example_wrap.o -o _example.so
+$ ld -shared example.o example_wrap.o -o _example.so
 ```
 ### 4. Use python module
 ```python
